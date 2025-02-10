@@ -4,6 +4,10 @@
             <h1>欢迎回来, {{ username }}!</h1>
             <button @click="logout">退出登录</button>
         </div>
+        <nav>
+            <RouterLink to="page1">page1</RouterLink>
+            <RouterLink to="page2">page2</RouterLink>
+        </nav>
     </main>
 </template>
 

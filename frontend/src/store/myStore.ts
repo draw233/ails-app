@@ -12,6 +12,10 @@ export const myTokenStore = defineStore('myToken', () => {
         token.value = ''
     }
 
-
     return { token, removeToken, addToken }
+}, {
+    persist: {
+        key: 'my-custom-key',
+        storage: localStorage,
+    }
 })
